@@ -100,7 +100,7 @@ internal class PlayPublisherPlugin : Plugin<Project> {
 
                 ArtifactType.Bundle -> {
                     val archivesBaseName = project.properties["archivesBaseName"] as String
-                    listOf(File(project.buildDir, "outputs/bundle/$name/$archivesBaseName.aab"))
+                    listOf(File(project.buildDir, "outputs/bundle/$name/$archivesBaseName-$name.aab"))
                 }
             }
         }
